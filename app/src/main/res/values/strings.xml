@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HW1(Burger App)</string>
+    <string name="title">Burgers</string>
+    <string name="bun">Buns</string>
+    <string name="patty">Patties</string>
+    <string name="extra">Extras</string>
+    <string name="burger_num">Totals</string>
+    <string name="total">Total</string>
+    <string name="bun_1">Wheat Bun</string>
+    <string name="bun_2">White Bun</string>
+    <string name="patty_1">Beef</string>
+    <string name="patty_2">Chicken</string>
+    <string name="patty_3">Salmon</string>
+    <string name="patty_4">Turkey</string>
+    <string name="patty_5">Veggie</string>
+    <string name="extra_1">Mushrooms</string>
+    <string name="extra_2">Lettuce</string>
+    <string name="extra_3">Tomatoes</string>
+    <string name="extra_4">Pickles</string>
+    <string name="extra_5">Mayo</string>
+    <string name="extra_6">Mustard</string>
+    <string name="total_cost">Total Cost:</string>
+    <string name="total_calories">Total Calories:</string>
+</resources>

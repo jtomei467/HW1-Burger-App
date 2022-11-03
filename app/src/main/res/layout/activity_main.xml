@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@color/teal_200"
+            android:gravity="top"
+            android:text="@string/bun"
+            android:textSize="34sp" />
+
+        <RadioGroup
+            android:id="@+id/buns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/wheat_bun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/wheat_bun"
+                android:backgroundTint="#80FFFFFF"
+                android:backgroundTintMode="src_over"
+                android:text="@string/bun_1"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/white_bun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_bun"
+                android:backgroundTint="#80FFFFFF"
+                android:backgroundTintMode="src_over"
+                android:text="@string/bun_2"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@color/teal_200"
+            android:gravity="top"
+            android:text="@string/patty"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/patties1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/beef"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/beef"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="@string/patty_1"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/chicken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/chicken"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="@string/patty_2"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/salmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/salmon"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="@string/patty_3"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/patties2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/turkey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/turkey"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="@string/patty_4"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/veggie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/patty_5"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@color/teal_200"
+            android:text="@string/extra"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/mushrooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_1"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/lettuce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_2"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/tomatoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_3"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/pickles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_4"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/mayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_5"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/mustard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/extra_6"
+                    android:onClick="onCheckboxClicked"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:background="@color/teal_200"
+            android:text="@string/burger_num"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/total_burgers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="numberSigned"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="#009688"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/total_cost" />
+
+            <TextView
+                android:id="@+id/total_cals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/total_calories" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

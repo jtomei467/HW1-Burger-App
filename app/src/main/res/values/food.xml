@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Item calories are first then cost
+    -->
+    <array name="white">
+        <item>140</item>
+        <item>1</item>
+    </array>
+
+    <array name="wheat">
+        <item>100</item>
+        <item>1</item>
+    </array>
+
+    <array name="beef">
+        <item>240</item>
+        <item>5.5</item>
+    </array>
+
+    <array name="chicken">
+        <item>180</item>
+        <item>5</item>
+    </array>
+
+    <array name="turkey">
+        <item>190</item>
+        <item>5</item>
+    </array>
+
+    <array name="salmon">
+        <item>95</item>
+        <item>7.5</item>
+    </array>
+
+    <array name="veggie">
+        <item>80</item>
+        <item>4.5</item>
+    </array>
+
+    <array name="mushrooms">
+        <item>60</item>
+        <item>1</item>
+    </array>
+
+    <array name="lettuce">
+        <item>20</item>
+        <item>0.3</item>
+    </array>
+
+    <array name="tomato">
+        <item>20</item>
+        <item>0.3</item>
+    </array>
+
+    <array name="pickles">
+        <item>30</item>
+        <item>0.5</item>
+    </array>
+
+    <array name="mayo">
+        <item>100</item>
+        <item>0</item>
+    </array>
+
+    <array name="mustard">
+        <item>60</item>
+        <item>0</item>
+    </array>
+</resources>
